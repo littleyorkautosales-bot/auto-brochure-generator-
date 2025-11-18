@@ -1,0 +1,18 @@
+<html>
+<body>
+<h1>Little York Auto Sales – Inventory Brochure</h1>
+<p>Updated: {{date}}</p>
+<hr>
+
+{% for car in cars %}
+<div>
+  <h2>{{car.year}} {{car.make}} {{car.model}}</h2>
+  <p>Price: {{car.price}}</p>
+  <p>Mileage: {{car.mileage}}</p>
+  <p>{{car.features}}</p>
+  <hr>
+</div>
+{% endfor %}
+
+</body>
+</html>
