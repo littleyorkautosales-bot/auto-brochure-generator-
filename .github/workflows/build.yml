@@ -2,7 +2,7 @@ name: Generate Brochure
 
 on:
   schedule:
-    - cron: "0 0 * * *"   # Runs every day at midnight
+    - cron: "0 0 * * *"   # Runs daily at midnight
   workflow_dispatch:
 
 jobs:
@@ -28,3 +28,4 @@ jobs:
         with:
           name: brochure
           path: brochure.pdf
+
